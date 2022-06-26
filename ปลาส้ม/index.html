@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+ <div class="logo">
+     <h1>ปลาส้มไรซ์เบอรรี่</h1>
+    <img src="fish.png" onclick="openNav()">
+ </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="content">
+    <video src="preview.mp4" controls></video>
+  </div>
+
+  <footer>
+    <img src="nt.png" width="120" height="120">
+    <p>Nathaweevittayakom School Students M.2/1 SMA (2022)</p>
+  </footer>
+
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+
+</body>
+</html>
