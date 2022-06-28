@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+* {
+    font-family: 'Mitr', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: orange; */
+    background-image: linear-gradient(to right, violet, blue, green, yellow, orange, red);
+    outline: none;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.title {
+    text-shadow: 2px 2px 2px white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    /* border: 5px solid white; */
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #111;
+}
+
+@media (max-width: 768px) {
+    video {
+        width: 100%;
+    }
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+form {
+    display: flex;
+    margin: 0px;
+    background: #111;
+    color: #fff;
+    padding: 5px;
+    justify-content: center;
+}
+
+.lisence {
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.text,
+.email,
+.advice {
+    margin-left: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+}
+
+form button {
+    margin-left: 20px;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid white;
+    background: #111;
+    color: white;
+    border-radius: 15px;
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 1;
+    background-color: rgb(255, 182, 46);
+    color: #111;
+}
+
+.advice input {
+    width: 500px;
+}
+
+input[type="email"] {
+    padding: 10px;
+}
+
+textarea {
+    margin-left: 20px;
+    padding: 4px;
+}
+
+@media (max-width:1200px) {
+
+    form,
+    .lisence {
+        display: none;
+    }
+}
+
+.history-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media (max-width:768px) {
+    .history-card {
+        max-width: 350px;
+        grid-template-columns: auto;
+    }
+}
+
+.carousel{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.owl-dot {
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #0072bc !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #0072bc !important;
+}
